@@ -1,0 +1,38 @@
+name: C/C++ Linter
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run C/C++ linter
+        uses: cpp-linter/cpp-linter-action@v2
+        id: linter
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Use your .clang-format (if present)
+          style: file
+
+          # Use .clang-tidy if present; empty string = read from config file
+          tidy-checks: ''
+
+          # Only update one comment thread per PR (optional, but nice)
+          thread-comments: ${{ github.event_name == 'pull_request' && 'update' }}
+
+          # Optional: restrict paths
+          # files-changed-only: true
+          # files: 'src include'
+
+          # Optional: fail the job if issues found
+          # format-review: true
+          # tidy-review: true
