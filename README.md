@@ -1,3 +1,6 @@
+![ESP-IDF](https://img.shields.io/badge/ESP--IDF-v5.5.1-blue)
+![Platform](https://img.shields.io/badge/platform-ESP32-orange)
+[![ESP-IDF Build](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/esp-idf-build.yml/badge.svg)](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/esp-idf-build.yml)
 [![C/C++ Linter](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/cpp-linter.yml/badge.svg)](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/cpp-linter.yml)
 
 # Plantbased
