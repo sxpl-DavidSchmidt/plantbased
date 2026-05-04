@@ -3,6 +3,22 @@
 [![ESP-IDF Build](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/esp-idf-build.yml/badge.svg)](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/esp-idf-build.yml)
 [![C/C++ Linter](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/cpp-linter.yml/badge.svg)](https://github.com/sxpl-DavidSchmidt/plantbased/actions/workflows/cpp-linter.yml)
 
-# Plantbased
+# 🌱 Plantbased
 
-Plantbased is a project for the ESP32 microcontroller that implements a configurable slave device to measure metrics relevant to plant health and report them to a master device. The project is currently in development.
+**Plantbased** is an ESP32-based project designed to monitor and report key environmental metrics relevant to plant health. It acts as a configurable slave device that collects sensor data and communicates it to a master device for further processing or visualization.
+
+> ⚠️ This project is still under development.
+
+---
+
+## ✨ Features
+
+- 📡 ESP32-based implementation
+- 🌡️ Measurement of plant-relevant metrics such as:
+  - Temperature
+  - Humidity
+  - Soil moisture
+  - (planned) Light intensity
+- 🔌 Configurable as a slave device
+- 🔄 Communication with a master device (e.g., via I2C, UART, or WiFi – depending on configuration)
+- ⚙️ Modular and extensible design
