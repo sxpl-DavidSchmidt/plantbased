@@ -13,14 +13,30 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 main {
-  padding: 2em;
+  padding: 80px 2em 2em;
 }
 
 hr {
   border: none;
   border-top: 1px solid var(--accent-dark);
   margin: 2em 0;
+}
+
+h2 {
+  padding: 1em 1em 0;
 }
 
 .navBar {
@@ -30,12 +46,30 @@ hr {
 .navBar ul {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   list-style: none;
   border-bottom: 1px solid var(--accent-dark);
 }
 
 .navBar li {
   display: flex;
+  margin: 0 1em;
+}
+
+.navBar .brand {
+  /*display: grid;
+  grid-template-columns: 60px 1fr;
+  */gap: 1em;
+  align-items: center;
+  margin-right: auto;
+  color: var(--text-color-light);
+}
+
+.navBar img {
+  width: 40px;
+  height: 40px;
+  background-color: var(--text-color-light);
+  border-radius: 25%;
 }
 
 .navBar a {
@@ -43,15 +77,13 @@ hr {
   color: #f9f4f5;
   text-decoration: none;
   padding: 1em 2em;
+  margin-left: 1em;
   transition: background-color 150ms ease;
+  border-bottom: 2px solid var(--accent-dark);
 }
 
 .navBar a:hover {
   background-color: var(--primary-color-dark);
-}
-
-.activeLink {
-  border-bottom: 2px solid var(--accent-dark);
 }
 
 .configSection {
@@ -79,7 +111,12 @@ hr {
   gap: 1em;
 }
 
-.configForm input {
+.configForm label {
+  display: flex;
+  flex-direction: column;
+}
+
+.configForm input, select {
   padding: 0.5em;
   border: 1px solid var(--accent-dark);
   border-radius: 5px;
