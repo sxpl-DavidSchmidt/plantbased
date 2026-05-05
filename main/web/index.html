@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Plantbased</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navBar">
+        <ul>
+          <li><a href="#device" class="activeLink">Device</a></li>
+          <li><a href="#wifi">Network</a></li>
+          <li><a href="#sensors">Sensors</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="device" class="deviceConfig">
+        <h1>Device-Configuration</h1>
+
+        <div class="config">
+          <div class="configForm">
+            <span>Device Identifier:</span>
+            <input type="text" placeholder="Enter Identifier" />
+
+            <span>Description:</span>
+            <input type="text" placeholder="Enter Description" />
+          </div>
+
+          <button>save</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="wifi" class="wifiConfig">
+        <h1>Wi-Fi-Configuration</h1>
+
+        <div class="config">
+          <div class="configForm">
+            <span>Wi-Fi SSID:</span>
+            <input type="text" placeholder="Enter Wi-Fi SSID" />
+
+            <span>Wi-Fi Password:</span>
+            <input type="password" placeholder="Enter Wi-Fi Password" />
+          </div>
+
+          <button>save</button>
+        </div>
+      </div>
+
+      <hr />
+
+      <div id="sensors" class="sensorConfig">
+        <h1>Sensor-Configuration</h1>
+      </div>
+    </main>
+  </body>
+</html>

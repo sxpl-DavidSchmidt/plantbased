@@ -1,0 +1,86 @@
+:root {
+  --text-color-light: #f9f4f5;
+  --text-color-dark: #333;
+  --primary-color: hsl(122, 39%, 49%);
+  --primary-color-dark: hsl(122, 39%, 40%);
+  --accent-dark: #3a3a3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: 2em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--accent-dark);
+  margin: 2em 0;
+}
+
+.navBar {
+  background-color: var(--primary-color);
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  border-bottom: 1px solid var(--accent-dark);
+}
+
+.navBar li {
+  display: flex;
+}
+
+.navBar a {
+  display: flex;
+  color: #f9f4f5;
+  text-decoration: none;
+  padding: 1em 2em;
+  transition: background-color 150ms ease;
+}
+
+.navBar a:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.activeLink {
+  border-bottom: 2px solid var(--accent-dark);
+}
+
+.configSection {
+  padding: 2em;
+}
+
+.config {
+  padding: 2em;
+}
+
+.config button {
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.configForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.configForm input {
+  padding: 0.5em;
+  border: 1px solid var(--accent-dark);
+  border-radius: 5px;
+}
